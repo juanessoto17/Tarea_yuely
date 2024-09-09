@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="iniciar();">
+
+    <h1 id="titulo1">Pase de Imágenes automático</h1>
+
+    <div id="cajaSlide">
+        <img id="imgSlide" src="./images/img1.jpg" title="Imagen" alt="Imagen" onclick="rotarImagenes();"> <!--Imagenes con el id para aplicar el-->
+        
+
+        <br/><br>
+
+        <form>
+            <input type="button" value="Parar"
+                onclick="clearInterval(temporizador);"><!--Para parar las imagenes-->
+            
+            <input type="button" value="Continuar" onclick="iniciar();">><!--Para continuar las imagenes-->
+        </form>
+    </div>
+    <script src="main/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="author" content="Raul caro Pastorino">
+
+    <script>
+        //codigo Javascript
+        function viajarConSuerte(){
+            var x = Math.random() * 10; // Usamos Math random para los numeros aleatorios 
+            var URL;
+                if(x <= 3){
+                    URL = 'https://www.hotmail.com';
+                }
+                else if(x <= 6){
+                    URL = 'https://www.gmail.com';
+                }else{
+                    URL = 'https://www.yahoo.com';
+                }
+            location.assign(URL);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo1">URL Aleatoria</h1>
+    <div>
+        <a href="javascript:viajarConSuerte();" title="Viajando con suerte">Pulsa aquí para probar Suerte</a>
+    </div>
+    
+</body>
+</html>
